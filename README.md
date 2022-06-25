@@ -10,5 +10,5 @@ The Cricket Score Sheet project is a simple application written in the C program
 The Developers making this Project are
  - Manoj kumar ([github link](https://github.com/dev-seek))
  - Shubham Kumar Mahato  ([github link](https://github.com/shubham-mahato))
- - Aditya Verma 
+ - Aditya Verma ([github link](https://github.com/aditya-vxr))
  - Aditya Kumar  ([github link](https://github.com/spidycoder))
