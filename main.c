@@ -39,11 +39,11 @@ for (int i = 0; i < 11; i++)
 
     scanf("%s",details[i].name);
 
-    scanf("%d",&details[i].sc);
+    // scanf("%d",&details[i].sc);
 
-    scanf("%d",&details[i].bp);
+    // scanf("%d",&details[i].bp);
 
-    scanf("%f",&details[i].st);
+    // scanf("%f",&details[i].st);
 
     if (details[i].bp==0)
     {   
@@ -109,7 +109,7 @@ for (int i = 0; i < 11; i++)
                 //   NB  = strcmp(arr[j][k],"NB");
                 //   WD  = strcmp(arr[j][k],"WD");
                 //   DB  = strcmp(arr[j][k],"DB");
-                if (arr[j][k]!=b[k]||arr[j][k]!=co[k]||arr[j][k]!=RO[k]||arr[j][k]!=sto[k]||arr[j][k]!=nb[k]||arr[j][k]!=db[k]||arr[j][k]!=wd[k])
+                if (arr[j][k]!=b[k]||arr[j][k]!=co[k]||arr[j][k]!=RO[k]||arr[j][k]!=sto[k])
                 {
                        if (arr[j][k]==6)
                     {
@@ -144,6 +144,10 @@ for (int i = 0; i < 11; i++)
                      }
                      
                      
+                }
+
+                else{
+                    break;
                 }
                 
 
