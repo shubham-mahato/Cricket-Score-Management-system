@@ -1,0 +1,132 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+struct bowler
+ {
+   char name[100];
+   int runsgv;
+   int wkt_taken;
+   int overs;
+   int max_w;
+   float economy;
+ }pl[100];
+
+ int main()
+ {
+    int n;
+    printf("\nEnter the bowlers details:\n");
+    printf("Enter the number of bowlers:\n");
+
+   scanf("%d",&n);
+
+    struct bowler details[n];
+    for(i=0;i<n;i++)
+   {
+
+       printf("\nEnter name of bowler%d:",i+1);
+       scanf("%s",pl[i].name);
+
+
+    //    printf("Enter the runs given by the bowler%d:\n ",i+1);
+    //    scanf("%d",&pl2[i].runsgv);
+
+
+    //    printf("Enter the overs bowled by the bowler%d:\n",i+1);
+    //    scanf("%d",&pl2[i].overs);
+
+
+    //    printf("Enter the wickets taken by the bowler%d\n",i+1);
+    //    scanf("%d",&pl2[i].wkttkn);
+
+    if (details[i].bp==0)
+    {   
+        end=i;
+        break ;
+    }
+     int n2 ;
+    printf("enter no. of overs \n");
+    scanf("%d",&n2);
+
+   char arr[n2][6];
+   printf("enter run scored per ball");
+
+    for (int i = 1; i <= (n2); i++)
+    {
+        printf("over no %d",i) ;
+
+        for (int j = 1; j <= 6; j++)
+        {
+            scanf("%s",arr[i][j]);
+        }
+        printf("\n");
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        if (details[i].b!=0)
+        {
+            for (int j = 1; j <= n; j++)
+            {
+                for (int k = 1; k <= 6; k++)
+                {
+                
+                 
+                    if (arr[j][k]!=b[k]||arr[j][k]!=co[k]||arr[j][k]!=RO[k]||arr[j][k]!=sto[k])
+                    {
+                        if (arr[j][k]==6)
+                        {
+                            pl[i].details[i].sc[j][k]=6 ;
+
+                        }
+
+                        else if (arr[j][k]==4)
+                        {
+                            pl[i].details[i].sc[j][k]=4;
+                        }
+                        
+                        else if (arr[j][k]==2)
+                        {
+                            pl[i].details[i].sc[j][k]=2;
+                        }
+                        
+                        else if (arr[j][k]==3)
+                        {
+                        pl[i].details[i].sc[j][k]=3;
+                        }
+
+                        else if (arr[j][k]==1)
+                        {
+                            pl[i].details[i].sc[j][k]=1;
+
+                            i++;
+                        }
+
+                        else{
+                            pl[i].details[i].sc[j][k]=0;
+                        }
+                        
+                        
+                    }
+
+                    else{
+                        break;
+                    }
+                
+
+                    
+                  
+                   
+              
+            }
+            
+        }
+        
+    }
+    
+
+
+    }
+   }
+
+    return 0;
+ }
